@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>travle</title>
+    <link rel=stylesheet href='./static/css/main.ec358357.css'>
+    <link rel=stylesheet href='./favicon.ico'>
+    <link rel=stylesheet href='./reset.css'>
+    <link rel=stylesheet href='./border.css'>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        rem()
+        window.onresize = () => rem()
+
+        function rem() {
+            let htmlWidth = document.documentElement.clientWidth || document.body.clientWidth;
+            if (htmlWidth > 750) htmlWidth = 750
+            let htmlDom = document.getElementsByTagName('html')[0];
+            htmlDom.style.fontSize = htmlWidth / 375 * 50 + 'px';
+        }
+    </script>
+    <script src="static/js/main.ff612bca.js"></script>
+</body>
+
+</html>
